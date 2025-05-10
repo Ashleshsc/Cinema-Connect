@@ -1,0 +1,154 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 2rem;
+}
+
+.auth-box {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 3rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.auth-header h2 {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 0, 85, 0.3);
+}
+
+.auth-header p {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.form-group input {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 0, 85, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-color);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.3);
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.auth-button {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.auth-button:hover {
+  background: linear-gradient(135deg, #ff3388, var(--primary-color));
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 0, 85, 0.5);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.auth-footer p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.toggle-auth {
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.toggle-auth:hover {
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(255, 0, 85, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-box {
+    padding: 2rem;
+  }
+
+  .auth-header h2 {
+    font-size: 2rem;
+  }
+
+  .auth-header p {
+    font-size: 1.1rem;
+  }
+
+  .form-group label {
+    font-size: 1.1rem;
+  }
+
+  .form-group input {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  .auth-button {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  .auth-footer p {
+    font-size: 1.1rem;
+  }
+
+  .toggle-auth {
+    font-size: 1.1rem;
+  }
+} 

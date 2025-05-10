@@ -1,0 +1,235 @@
+.booking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.booking-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.movie-info {
+  background: #2a2a2a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-poster {
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+  border-radius: 0.5rem;
+  margin: 0 auto 1.5rem;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+}
+
+.movie-details {
+  width: 100%;
+}
+
+.movie-details h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.movie-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  color: #cccccc;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.genre-tag {
+  background: #4a90e2;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+}
+
+.overview {
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.booking-sidebar {
+  background: #2a2a2a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.booking-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.booking-step {
+  border-bottom: 1px solid #333333;
+  padding-bottom: 1.5rem;
+}
+
+.booking-step h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.city-select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #333333;
+  border-radius: 0.5rem;
+  background: #2a2a2a;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.date-option {
+  background: #2a2a2a;
+  border: 1px solid #333333;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.date-option:hover {
+  background: #4a90e2;
+}
+
+.date-option.selected {
+  background: #4a90e2;
+  color: white;
+  border-color: #4a90e2;
+}
+
+.theaters-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.theater-option {
+  background: #2a2a2a;
+  border: 1px solid #333333;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theater-option:hover {
+  background: #4a90e2;
+}
+
+.theater-option.selected {
+  border-color: #4a90e2;
+  background: #2a2a2a;
+}
+
+.theater-option h4 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.theater-option p {
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+.screens-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.screen-option {
+  background: #2a2a2a;
+  border: 1px solid #333333;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.screen-option h4 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.showtimes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.5rem;
+}
+
+.showtime-btn {
+  background: #2a2a2a;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.showtime-btn:hover {
+  background: #4a90e2;
+  color: white;
+}
+
+.price {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.showtime-btn:hover .price {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .booking-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .movie-poster {
+    max-width: 200px;
+  }
+  
+  .movie-meta {
+    flex-wrap: wrap;
+  }
+}

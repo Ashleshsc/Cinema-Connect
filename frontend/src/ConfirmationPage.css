@@ -1,0 +1,308 @@
+.confirmation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.confirmation-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-header h1 {
+  color: #28a745;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.confirmation-message {
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.confirmation-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.booking-details {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-section {
+  display: grid;
+  gap: 2rem;
+}
+
+.movie-info, .seats-info, .payment-info {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.movie-info h3 {
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+.seats-info p {
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+.payment-info p {
+  margin: 0.5rem 0;
+  color: #495057;
+}
+
+.ticket-qr {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.qr-code {
+  margin: 2rem 0;
+}
+
+.qr-placeholder {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #6c757d;
+}
+
+.qr-instructions {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.confirmation-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.download-button, .book-more-button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+.book-more-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.book-more-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .confirmation-content {
+    grid-template-columns: 1fr;
+  }
+
+  .confirmation-header h1 {
+    font-size: 2rem;
+  }
+
+  .confirmation-actions {
+    flex-direction: column;
+  }
+
+  .download-button, .book-more-button {
+    width: 100%;
+  }
+}
+
+.theater-info, .showtime {
+  color: #6c757d;
+  margin: 0.5rem 0;
+}
+
+.seats-details {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.seats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.seat-tag {
+  background: #e9ecef;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.billing-details {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.billing-details h4 {
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+.billing-details p {
+  margin: 0.5rem 0;
+  color: #495057;
+}
+
+.qr-code {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.qr-placeholder {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.ticket-id {
+  margin-top: 1rem;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.terms-conditions {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.terms-conditions h3 {
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+.terms-conditions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.terms-conditions li {
+  color: #495057;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.terms-conditions li:before {
+  content: "•";
+  color: #007bff;
+  position: absolute;
+  left: 0;
+}
+
+.confirmation-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home-button {
+  background: #343a40;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 1rem;
+}
+
+.home-button:hover {
+  background: #23272b;
+}
+
+.thank-you {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.error-message {
+  text-align: center;
+  padding: 2rem;
+  color: #dc3545;
+}
+
+.error-message button {
+  margin-top: 1rem;
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media print {
+  .print-button,
+  .home-button,
+  .confirmation-footer {
+    display: none;
+  }
+
+  .confirmation-container {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ticket-container {
+    border: none;
+    background: none;
+  }
+} 

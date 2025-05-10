@@ -1,0 +1,9 @@
+@echo off
+echo Stopping any running React development server...
+taskkill /F /IM node.exe /FI "WINDOWTITLE eq *React*" /T 2>nul
+
+echo Clearing environment variable cache...
+if exist node_modules\.cache rmdir /s /q node_modules\.cache
+
+echo Starting the development server...
+npm start 
