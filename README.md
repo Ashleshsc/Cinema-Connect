@@ -154,4 +154,4 @@ This project is licensed under the ISC License.
 
 ## Support
 
-For support, email [ashleshsinghchouhan26@gmail.com] or open an issue in the repository. 
+For support, email [your-mail@example.com] or open an issue in the repository. 
